@@ -28,6 +28,8 @@ Auf Wunsch prüft der Skill alle Bilder eines Ordners und verschiebt sie in die 
 2. Jedes Bild ansehen und so bewerten:
    - **Abgelehnt**, wenn eines zutrifft:
      - stark unterbelichtet oder verrauscht, Motiv kaum erkennbar
+     - sichtbares Rauschen (Körnung in Himmel, Schatten oder Flächen), auch bei ausreichender Helligkeit
+     - geringe Auflösung: unter 4 Megapixel Gesamtpixel (Richtwert, nicht verifiziert)
      - unscharf oder verwackelt
      - sichtbares Logo oder Marke (z. B. Firmenaufdruck auf LKW) ohne Freigabe
      - erkennbare Personen, Privatgebäude, Behörden- oder Militäranlage ohne Freigabe
@@ -77,7 +79,7 @@ Zwei Dateien im Ordner der Bilder, UTF-8. Anführungszeichen nur dort, wo ein Fe
 `Filename,Description,Keywords,Categories,Editorial,Mature content,illustration`
 
 - Categories: bis zu zwei, komma-getrennt in Anführungszeichen, klein und englisch, z. B. `"nature,parks/outdoor"`
-- Editorial, Mature content, illustration: jeweils `no`. Ausnahme: Bilder mit benannter Anlage oder Ort, die nicht frei kommerziell nutzbar sind, als Editorial `yes` und den Namen im Titel. Kein Release nötig, nur redaktionelle Nutzung.
+- Editorial, Mature content, illustration: jeweils `no`. Kein Editorial-Upload als Ausweg: Bilder mit erkennbarer Anlage, Gebäude oder Eigentum ohne Freigabe werden abgelehnt (`abgelehnt/`), nicht als Editorial eingereicht.
 - Keine Release-Spalten im Format. Releases nur im Hinweis an den Nutzer nennen.
 
 ## Regeln
